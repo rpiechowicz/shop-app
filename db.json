@@ -1,0 +1,19 @@
+{
+	"money": {
+		"userMoney": 1000
+	},
+	"shoppingList": [
+		{
+			"id": 0,
+			"title": "Rower dla 7 latka",
+			"price": 200,
+			"description": "rowerek"
+		},
+		{
+			"id": 1,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb"
+		}
+	]
+}
