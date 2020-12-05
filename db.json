@@ -1,19 +1,79 @@
 {
-	"money": {
-		"userMoney": 1000
+	"user": {
+		"money": 1000
 	},
 	"shoppingList": [
 		{
 			"id": 0,
 			"title": "Rower dla 7 latka",
 			"price": 200,
-			"description": "rowerek"
+			"description": "rowerek",
+			"rate": 4.5,
+			"countInBase": 3
 		},
 		{
 			"id": 1,
 			"title": "Komputer",
 			"price": 350,
-			"description": "i9 10k 16gb"
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 12
+		},
+		{
+			"id": 2,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 1
+		},
+		{
+			"id": 3,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 3
+		},
+		{
+			"id": 4,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 32
+		},
+		{
+			"id": 5,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 18
+		},
+		{
+			"id": 6,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 10
+		},
+		{
+			"id": 7,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 5
+		},
+		{
+			"id": 8,
+			"title": "Komputer",
+			"price": 350,
+			"description": "i9 10k 16gb",
+			"rate": 5.0,
+			"countInBase": 8
 		}
 	]
 }

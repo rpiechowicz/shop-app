@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import { Navbar } from './pages'
+import { Navbar, Home } from './pages'
 
-import { Container } from 'rsuite'
+import { Container, Content } from 'rsuite'
 
 const App = () => {
 	const navigationItems = [
@@ -23,7 +23,9 @@ const App = () => {
 
 				<Switch>
 					<Route exact path="/">
-						Strona główna
+						<Content style={{ margin: 10 }}>
+							<Home />
+						</Content>
 					</Route>
 					<Route path="/manage">Zarządzanie</Route>
 					<Route path="/card">Koszyk</Route>
