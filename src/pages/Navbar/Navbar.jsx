@@ -2,9 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import { Header, Nav, Navbar, Content, Icon, Badge } from 'rsuite'
+import { Header, Nav, Navbar, Icon, Badge, Drawer, Tag } from 'rsuite'
 
-const NavbarMenu = ({ items, card }) => {
+const NavbarMenu = ({ items, card, money }) => {
 	const countProductsInCard = card.length
 	const itemsNavigation = items.map(item => {
 		return (
@@ -46,6 +46,11 @@ const NavbarMenu = ({ items, card }) => {
 				<Navbar appearance="default" style={{ marginTop: 20 }}>
 					<Navbar.Body>
 						<Nav>{itemsNavigation}</Nav>
+						<Nav pullRight>
+							<Nav.Item icon={<Icon icon="money" />}>
+								Dostępne środki: <Tag color="green">{money} zł</Tag>
+							</Nav.Item>
+						</Nav>
 					</Navbar.Body>
 				</Navbar>
 			</Header>
@@ -56,5 +61,6 @@ const NavbarMenu = ({ items, card }) => {
 export default connect(state => {
 	return {
 		card: state.user.card,
+		money: state.user.money,
 	}
 })(NavbarMenu)
