@@ -16,5 +16,6 @@ export const fetchAddProductToCard = ({ data }) => {
 	return {
 		type: ADD_PRODUCT_TO_CARD,
 		promise,
+		successMessage: 'Produkt został prawidłowo dodany do koszyka!',
 	}
 }

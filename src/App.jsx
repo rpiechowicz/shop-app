@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import { Navbar, Home } from './pages'
+import { Navbar, Home, Card } from './pages'
 
 import { Container, Content } from 'rsuite'
 
@@ -21,6 +21,8 @@ const App = () => {
 					</Container>
 				</div>
 
+				<Card />
+
 				<Switch>
 					<Route exact path="/">
 						<Content style={{ margin: 10 }}>
@@ -28,7 +30,6 @@ const App = () => {
 						</Content>
 					</Route>
 					<Route path="/manage">Zarządzanie</Route>
-					<Route path="/card">Koszyk</Route>
 				</Switch>
 			</Router>
 		</>

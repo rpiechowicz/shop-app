@@ -4,15 +4,6 @@
   },
   "card": [
     {
-      "id": "V7sd5g3Lz1",
-      "title": "Rower dla 7 latka",
-      "price": 200,
-      "description": "rowerek",
-      "rate": 4.5
-    }
-  ],
-  "shoppingList": [
-    {
       "id": "0NkiF2-N7p",
       "title": "Komputer",
       "price": 350,
@@ -25,6 +16,15 @@
       "price": 350,
       "description": "i9 10k 16gb",
       "rate": 5
+    }
+  ],
+  "shoppingList": [
+    {
+      "id": "W7YiNY6pwm",
+      "title": "Samochód",
+      "price": 350,
+      "description": "i9 10k 16gb",
+      "rate": 5
     },
     {
       "id": "v81cdXtH0A",
@@ -34,11 +34,11 @@
       "rate": 5
     },
     {
-      "id": "W7YiNY6pwm",
-      "title": "Samochód",
-      "price": 350,
-      "description": "i9 10k 16gb",
-      "rate": 5
+      "id": "V7sd5g3Lz1",
+      "title": "Rower dla 7 latka",
+      "price": 200,
+      "description": "rowerek",
+      "rate": 4.5
     },
     {
       "id": "rpE8I6cKdz",
@@ -48,14 +48,14 @@
       "rate": 5
     },
     {
-      "id": "hjsuFousV0",
+      "id": "9pKmQcJsmi",
       "title": "Komputer",
       "price": 350,
       "description": "i9 10k 16gb",
       "rate": 5
     },
     {
-      "id": "9pKmQcJsmi",
+      "id": "hjsuFousV0",
       "title": "Komputer",
       "price": 350,
       "description": "i9 10k 16gb",

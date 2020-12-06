@@ -2,31 +2,28 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import { Header, Nav, Navbar, Icon, Badge, Drawer, Tag } from 'rsuite'
+import { setShoppingCardTrue } from '../../data/actions/common.actions'
 
-const NavbarMenu = ({ items, card, money }) => {
+import { Header, Nav, Navbar, Icon, Badge, Tag } from 'rsuite'
+
+const NavbarMenu = ({ items, card, money, setShoppingCardTrue }) => {
 	const countProductsInCard = card.length
+
+	const handleShowCard = () => {
+		setShoppingCardTrue()
+	}
+
 	const itemsNavigation = items.map(item => {
 		return (
 			<Nav key={item}>
 				{item.content === 'Koszyk' ? (
 					countProductsInCard === 0 ? (
-						<Nav.Item
-							componentClass={Link}
-							key={item}
-							to={item.to}
-							icon={<Icon icon={item.icon} />}
-						>
+						<Nav.Item key={item} onClick={handleShowCard} icon={<Icon icon={item.icon} />}>
 							{item.content}
 						</Nav.Item>
 					) : (
 						<Badge content={countProductsInCard} key={item}>
-							<Nav.Item
-								componentClass={Link}
-								key={item}
-								to={item.to}
-								icon={<Icon icon={item.icon} />}
-							>
+							<Nav.Item key={item} onClick={handleShowCard} icon={<Icon icon={item.icon} />}>
 								{item.content}
 							</Nav.Item>
 						</Badge>
@@ -58,9 +55,12 @@ const NavbarMenu = ({ items, card, money }) => {
 	)
 }
 
-export default connect(state => {
-	return {
-		card: state.user.card,
-		money: state.user.money,
-	}
-})(NavbarMenu)
+export default connect(
+	state => {
+		return {
+			card: state.user.card,
+			money: state.user.money,
+		}
+	},
+	{ setShoppingCardTrue }
+)(NavbarMenu)
